@@ -24,7 +24,7 @@ sass:
 url: voodoodrive.ca
 baseurl: # the subpath of your site, e.g. /blog
 title: "Voodoo Drive"
-description:
+description: 'Band'
 keywords: "rock,blues,pop,phantrique"
 author:
   name:

@@ -23,9 +23,9 @@ sass:
 # Site Data
 url: voodoodrive.ca
 baseurl: # the subpath of your site, e.g. /blog
-title: Voodoo Drive
-description: Ça rock en Roy!
-keywords: 'rock,blues,pop,phantrique'
+title: "Voodoo Drive"
+description: "Ça rock en Roy!"
+keywords: "rock,blues,pop,phantrique"
 author:
   name:
   job_title:

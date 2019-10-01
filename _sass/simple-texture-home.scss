@@ -16,11 +16,9 @@ body {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: 5em;
 
     text-transform: uppercase;
-
-    color: $color-text-light;
 }
 
 h2 {
@@ -29,6 +27,8 @@ h2 {
 
 h3 {
     font-size: 1.725em;
+
+    color: $color-text-light;
 }
 
 .small,

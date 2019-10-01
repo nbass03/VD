@@ -21,15 +21,15 @@ sass:
   style: compressed
 
 # Site Data
-url: https://www.voodoodrive.ca
+url: voodoodrive.ca
 baseurl: # the subpath of your site, e.g. /blog
 title: Voodoo Drive
 description: Ça rock en Roy!
 keywords: 'rock,blues,pop,phantrique'
-author: Nicholas Lemoine
-  name: Nicholas Lemoine
-  job_title: Maître
-  location: Partout
+author:
+  name:
+  job_title:
+  location:
   email: voodoodriveband@gmail.com
   social_links:
     - name: facebook

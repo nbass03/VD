@@ -90,9 +90,11 @@ textarea {
 }
 
 #section1 .show_dates .container {
-    width: 100%;
+    width: 85%;
     align-items: flex-start;
     display: flex;
+    justify-content: center;
+    color: $color-text-light;
 }
     
 #section1 .show_dates .container .single_show {

@@ -41,16 +41,18 @@
     <div id="section1" class="section" data-name="social">
         <h3 class="animated hidden">
             <!-- <a class="btn-enter btn-light" title="{{ site.data.i18n[site.lang].enter_blog }}" href="{{ site.paths.blog | relative_url }}">{{ site.data.i18n[site.lang].enter_blog }}</a> -->
-            Des dates de spectacles seront bientôt ajoutées.
-        </h3>
-        <div class="social-links animated hidden">
+            <!-- Des dates de spectacles seront bientôt ajoutées. -->
             <ul>
+              {% assign posts_collate = site.posts %}
               {% for post in site.posts %}
               <li>
                   <a href="{{ post.url }}">{{ post.title }}</a>
               </li>
               {% endfor %}
           </ul>
+        </h3>
+        <div class="social-links animated hidden">
+
       </div>
   </div>
 

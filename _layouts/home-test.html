@@ -13,13 +13,13 @@
     <link href='{{ site.baseurl }}/assets/stylesheets/blog.css' rel="stylesheet" type="text/css">
     {% include common/libraries.html %}
     {% if site.google_tag_manager %}
-        {% include common/gtm-head.html %}
+    {% include common/gtm-head.html %}
     {% endif %}
 </head>
 
 <body>
     {% if site.google_tag_manager %}
-        {% include common/gtm-body.html %}
+    {% include common/gtm-body.html %}
     {% endif %}
 
     <ul id="menu">
@@ -27,7 +27,7 @@
         <li data-menuanchor="social"><a href="#social">Social Links</a></li>
     </ul>
 
-   <div id="section0" class="section" data-name="bio">
+    <div id="section0" class="section" data-name="bio">
 
         {% include common/notices.html %}
 
@@ -46,28 +46,28 @@
         </h3>
         <div class="social-links animated hidden">
             {% if site.google_tag_manager %}
-        {% include common/gtm-body.html %}
-    {% endif %}
+            {% include ../common/gtm-body.html %}
+            {% endif %}
 
-    {% include common/notices.html %}
-    {% include blog/overlay.html %}
+            {% include common/notices.html %}
+            {% include ../blog/overlay.html %}
 
-    <div id="page" class="hentry">
-        {% include blog/header.html %}
+            <div id="page" class="hentry">
+                {% include ../blog/header.html %}
 
-        <div class="body animated fadeInDown" role="main">
-            <div class="unit-body">
-                <div class="unit-inner unit-body-inner">
-                    <div class="entry-content">
-                        {{ content }}
+                <div class="body animated fadeInDown" role="main">
+                    <div class="unit-body">
+                        <div class="unit-inner unit-body-inner">
+                            <div class="entry-content">
+                                {{ content }}
+                            </div>
+                        </div>
                     </div>
                 </div>
+                {% include ../blog/footer.html %}
             </div>
-        </div>
-        {% include blog/footer.html %}
-    </div>
 
-    {% include blog/scripts.html %}
+            {% include ../blog/scripts.html %}
         </div>
     </div>
 

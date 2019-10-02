@@ -94,8 +94,9 @@ textarea {
 }
     
 #section1 .show_dates .container li {
-    display:flex;
+    display:inline-block;
 }
+
 /* one item */
 #section1 .show_dates .container li:first-child:nth-last-child(1) {
 /* -or- li:only-child { */

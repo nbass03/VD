@@ -91,34 +91,18 @@ textarea {
 
 #section1 .show_dates .container {
     width: 100%;
+    align-items: flex-start;
+    display: flex;
 }
     
 #section1 .show_dates .container .single_show {
-    display:inline-block;
+    flex: 1 1 2em;
 }
 
-/* one item */
-#section1 .show_dates .container .single_show:first-child:nth-last-child(1) {
-/* -or- .single_show:only-child { */
-    width: 100%;
-}
-
-/* two items */
-#section1 .show_dates .container .single_show:first-child:nth-last-child(2),
-#section1 .show_dates .container .single_show:first-child:nth-last-child(2) ~ .single_show {
-    width: 50%;
-}
-
-/* three items */
-#section1 .show_dates .container .single_show:first-child:nth-last-child(3),
-#section1 .show_dates .container .single_show:first-child:nth-last-child(3) ~ .single_show {
-    width: 33.3333%;
-}
-
-/* four items */
-#section1 .show_dates .container .single_show:first-child:nth-last-child(4),
-#section1 .show_dates .container .single_show:first-child:nth-last-child(4) ~ .single_show {
-    width: 25%;
+#section1 .show_dates .container .single_show:nth-child(3) {
+  align-self: flex-end;
+  flex: 2 10 5em;
+  order: -1;
 }
 
 #fullPage-nav {

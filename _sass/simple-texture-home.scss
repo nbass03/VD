@@ -93,31 +93,31 @@ textarea {
     width: 100%;
 }
     
-#section1 .show_dates .container li {
+#section1 .show_dates .container .single_show {
     display:inline-block;
 }
 
 /* one item */
-#section1 .show_dates .container li:first-child:nth-last-child(1) {
-/* -or- li:only-child { */
+#section1 .show_dates .container .single_show:first-child:nth-last-child(1) {
+/* -or- .single_show:only-child { */
     width: 100%;
 }
 
 /* two items */
-#section1 .show_dates .container li:first-child:nth-last-child(2),
-#section1 .show_dates .container li:first-child:nth-last-child(2) ~ li {
+#section1 .show_dates .container .single_show:first-child:nth-last-child(2),
+#section1 .show_dates .container .single_show:first-child:nth-last-child(2) ~ .single_show {
     width: 50%;
 }
 
 /* three items */
-#section1 .show_dates .container li:first-child:nth-last-child(3),
-#section1 .show_dates .container li:first-child:nth-last-child(3) ~ li {
+#section1 .show_dates .container .single_show:first-child:nth-last-child(3),
+#section1 .show_dates .container .single_show:first-child:nth-last-child(3) ~ .single_show {
     width: 33.3333%;
 }
 
 /* four items */
-#section1 .show_dates .container li:first-child:nth-last-child(4),
-#section1 .show_dates .container li:first-child:nth-last-child(4) ~ li {
+#section1 .show_dates .container .single_show:first-child:nth-last-child(4),
+#section1 .show_dates .container .single_show:first-child:nth-last-child(4) ~ .single_show {
     width: 25%;
 }
 

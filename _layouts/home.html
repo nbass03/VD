@@ -44,14 +44,19 @@
             <!-- Des dates de spectacles seront bientôt ajoutées. -->
         </h3>
         <div class="show_dates animated hidden">
-            <ul class="container">
+            <div class="container">
               {% assign posts_collate = site.posts %}
               {% for post in site.posts %}
-              <li>
-                  {{ post.title }}
-              </li>
+              <div class="single_show">
+                  <p class="title">
+                      {{ post.title }}
+                  </p>
+                  <p class="details">
+                      {{ post.excerpt }}
+                  </p>
+              </div>    
               {% endfor %}
-            </ul>
+            </div>
         </div>
     </div>
 

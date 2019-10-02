@@ -44,8 +44,29 @@
             Des dates de spectacles seront bientôt ajoutées.
         </h3>
         <div class="social-links animated hidden">
-            {% assign posts_collate = site.posts %}
-            {% include helpers/posts_collate %}
+            {% if site.google_tag_manager %}
+        {% include common/gtm-body.html %}
+    {% endif %}
+
+    {% include common/notices.html %}
+    {% include blog/overlay.html %}
+
+    <div id="page" class="hentry">
+        {% include blog/header.html %}
+
+        <div class="body animated fadeInDown" role="main">
+            <div class="unit-body">
+                <div class="unit-inner unit-body-inner">
+                    <div class="entry-content">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include blog/footer.html %}
+    </div>
+
+    {% include blog/scripts.html %}
         </div>
     </div>
 

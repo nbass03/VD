@@ -96,6 +96,29 @@ textarea {
 #section1 .show_dates .container li {
     display:flex;
 }
+/* one item */
+#section1 .show_dates .container li:first-child:nth-last-child(1) {
+/* -or- li:only-child { */
+    width: 100%;
+}
+
+/* two items */
+#section1 .show_dates .container li:first-child:nth-last-child(2),
+#section1 .show_dates .container li:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+}
+
+/* three items */
+#section1 .show_dates .container li:first-child:nth-last-child(3),
+#section1 .show_dates .container li:first-child:nth-last-child(3) ~ li {
+    width: 33.3333%;
+}
+
+/* four items */
+#section1 .show_dates .container li:first-child:nth-last-child(4),
+#section1 .show_dates .container li:first-child:nth-last-child(4) ~ li {
+    width: 25%;
+}
 
 #fullPage-nav {
     span {

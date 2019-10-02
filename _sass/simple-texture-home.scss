@@ -87,20 +87,17 @@ textarea {
 
 #section1 {
     background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #150E1F;
-
-    .show_dates {
-        .container {
-            width: 85%;
-            
-            li {
-              display:flex;
-            }
-
-        }
-
-    }
-    
 }
+
+#section1 .show_dates .container {
+    width: 85%;
+}
+    
+#section1 .show_dates .container li {
+    display:flex;
+}
+
+
 
 #fullPage-nav {
     span {

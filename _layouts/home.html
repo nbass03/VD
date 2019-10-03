@@ -46,6 +46,8 @@
         <div class="show_dates animated hidden">
             <div class="container">
               {% assign posts_collate = site.posts %}
+              {% assign date_english = post.showdate | date: date_format %}
+                        {% include home/date-french.html %}
               {% for post in site.posts %}
               <div class="single_show">
                   <p class="title">
@@ -55,8 +57,6 @@
                       {{ post.excerpt }}
                   </p>
                   <p class="details">
-                        {% assign date_english = post.showdate | date: date_format %}
-                        {% include home/date-french.html %}
                       {{ post.showdate | date: "%-d %B %Y" }}<br>
                       {{ post.showdate | date: "%R" }}
                   </p>

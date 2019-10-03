@@ -19,4 +19,5 @@ fields:
     display_utc: true
     export_format: ''
 pages:
+- _posts/MSG.md
 - _posts/2019-12-01-La Baguette.md

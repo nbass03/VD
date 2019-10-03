@@ -55,7 +55,7 @@
                       {{ post.excerpt }}
                   </p>
                   <p class="details">
-                      {{ post.showdate }}
+                      {{ post.showdate | date_to_long_string }}
                   </p>
               </div>    
               {% endfor %}

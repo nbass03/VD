@@ -17,6 +17,6 @@ fields:
     date_format: DD/MM/YYYY
     time_format: h:mm
     display_utc: true
-    export_format: DD/MM/YYYY h:mm
+    export_format: ''
 pages:
 - _posts/2019-12-01-La Baguette.md

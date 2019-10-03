@@ -17,3 +17,5 @@ fields:
     date_format: DD/MM/YYYY
     time_format: h:mm
     display_utc: false
+pages:
+- _posts/La Baguette.md

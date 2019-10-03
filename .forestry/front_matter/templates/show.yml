@@ -8,9 +8,9 @@ fields:
     required: true
   label: Titre
   description: Écrire l'endroit ou on joue.
-- name: date
+- name: showdate
   type: datetime
-  label: Date
+  label: Date du show
   description: Date à laquelle on joue.
   config:
     required: true

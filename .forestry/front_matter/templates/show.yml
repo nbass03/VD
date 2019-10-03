@@ -1,4 +1,19 @@
 ---
 label: Show
 hide_body: false
-fields: []
+fields:
+- name: titre
+  type: text
+  config:
+    required: true
+  label: Titre
+  description: Écrire l'endroit ou on joue.
+- name: date
+  type: datetime
+  label: Date
+  description: Date à laquelle on joue.
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: h:mm
+    display_utc: false

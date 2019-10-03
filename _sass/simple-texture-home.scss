@@ -101,6 +101,11 @@ textarea {
     flex: 1 1 2em;
     border: 1px solid #fff;
     padding: 10px;
+    margin:0 1em 0 0;
+}
+
+#section1 .show_dates .container .single_show:last-child {
+    margin:0;
 }
 
 #fullPage-nav {

@@ -16,6 +16,6 @@ fields:
     required: true
     date_format: DD/MM/YYYY
     time_format: h:mm
-    display_utc: false
+    display_utc: true
 pages:
 - _posts/2019-12-01-La Baguette.md

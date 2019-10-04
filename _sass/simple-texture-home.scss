@@ -88,6 +88,13 @@ textarea {
 #section1 {
     background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #150E1F;
 }
+.nav-global ul{
+    list-style:none;
+    padding:0;
+}
+.nav-global ul li{
+    display:inline-block;
+}
 .u-container {
     max-width: 52rem;
     margin-right: auto;

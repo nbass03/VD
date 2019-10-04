@@ -94,6 +94,18 @@ textarea {
 }
 .nav-global ul li{
     display:inline-block;
+    padding:0 5px;
+}
+.nav-global ul li:hover{
+    color: $color-hover;
+}
+.nav-gloval ul .section_on{
+    color: $color-text-light;
+    text-decoration:undeline;
+}
+.nav-gloval ul .section_off{
+    color: $color-text-dark;
+    text-decoration:none;
 }
 .u-container {
     max-width: 52rem;

@@ -88,7 +88,14 @@ textarea {
 #section1 {
     background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #150E1F;
 }
-
+.u-container {
+    max-width: 72rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
 #section1 .show_dates ul{
     width: 60%;
     margin:0 auto 2,5rem;

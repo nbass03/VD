@@ -39,32 +39,37 @@
     </div>
 
     <div id="section1" class="section" data-name="social">
-        <h3 class="animated hidden">
-            Des dates de spectacles seront bientôt ajoutées.
-        </h3>
-        <div class="show_dates animated hidden">
-            <ul class="container">
-              {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}
-              {% assign posts_collate = site.posts %}
-              {% for post in site.posts %}
-                {% capture date %}{{post.showdate | date: '%s' | plus: 0 }}{% endcapture %}
-                {% if date > now %}
-                  {% assign date_format = site.date_format | default: "%-d %B %Y" %}
-                  {% assign date_english = post.showdate | date: date_format %}
-                  {% include date-french.html %}
-                        <li class="single_show">
-                          <h3>
-                            {{ post.titre }}
-                            <br>
-                            <small>{{ post.excerpt }}</small>
-                          </h3>
-                          <p>{{ date_french }}</p><br>
-                          {{ post.showdate | date: "%R" }}
-                        </li>
-                    
-                {% endif %}  
-              {% endfor %}
-            </ul>
+        <div class="u-container">
+            <h3 class="animated hidden">
+                Des dates de spectacles seront bientôt ajoutées.
+            </h3>
+            <div class="show_dates animated hidden">
+                <ul class="container">
+                  {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}
+                  {% assign posts_collate = site.posts %}
+                  {% for post in site.posts %}
+                    {% capture date %}{{post.showdate | date: '%s' | plus: 0 }}{% endcapture %}
+                    {% if date > now %}
+                      {% assign date_format = site.date_format | default: "%-d %B %Y" %}
+                      {% assign date_english = post.showdate | date: date_format %}
+                      {% include date-french.html %}
+                            <li class="single_show">
+                              <h3>
+                                {{ post.titre }}
+                                <br>
+                                <small>{{ post.excerpt }}</small>
+                              </h3>
+                              <p>
+                                {{ date_french }}
+                                <br>
+                                {{ post.showdate | date: "%R" }}
+                              </p>
+                            </li>
+                        
+                    {% endif %}  
+                  {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 

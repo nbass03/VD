@@ -90,28 +90,45 @@ textarea {
 }
 
 #section1 .show_dates .container {
-    width: 85%;
-    align-items: flex-start;
-    display: flex;
-    margin:0 auto;
+    width: 60%;
+    margin:0 auto 2,5rem;
     color: $color-text-light;
+    list-style: none;
+
 }
     
 #section1 .show_dates .container .single_show {
-    flex: 1 1 2em;
-    border: 1px solid #fff;
-    padding: 10px;
-    margin:0 1em 0 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-top: 1px solid #EFF1F3;
 }
 
 #section1 .show_dates .container .single_show .title{
-        border-bottom:1px solid #fff;
-        width:40%;
-        margin:0 auto;
+    line-height: 1.5;
+    font-size: 1.8rem;
 }
-
-#section1 .show_dates .container .single_show:last-child {
-    margin:0;
+#section1 .show_dates .container .single_show p{   
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: #515862;
+}
+@media screen and (min-width: 45rem)
+.single_show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #fullPage-nav {

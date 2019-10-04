@@ -41,10 +41,18 @@
     <div id="section1" class="section" data-name="social">
         <div class="u-container">
             <h3 class="animated hidden">
-                Des dates de spectacles seront bientôt ajoutées.
+                Spectacles
             </h3>
+
+            <nav class="nav-global">
+                <ul>
+                    <li class="nav-link"><a title="{{ site.data.i18n[site.lang].past }}" href="" class="past_show">{{ site.data.i18n[site.lang].past }}</a></li>
+                    <li class="nav-link"><a title="{{ site.data.i18n[site.lang].to_come }}" href="" class="show_to_come">{{ site.data.i18n[site.lang].to_come }}</a></li>
+                </ul>
+            </nav>
+
             <div class="show_dates animated hidden">
-                <ul class="container">
+                <ul class="container animated" id="show_to_come_bloc">
                   {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}
                   {% assign posts_collate = site.posts %}
                   {% for post in site.posts %}
@@ -64,10 +72,35 @@
                               </p>
                             </li>
                         
-                    {% endif %}  
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+
+                <ul class="container animated hidden" id="past_show_bloc">
+                  {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}
+                  {% assign posts_collate = site.posts %}
+                  {% for post in site.posts %}
+                    {% capture date %}{{post.showdate | date: '%s' | plus: 0 }}{% endcapture %}
+                    {% if date < now %}
+                      {% assign date_format = site.date_format | default: "%-d %B %Y" %}
+                      {% assign date_english = post.showdate | date: date_format %}
+                      {% include date-french.html %}
+                            <li class="single_show">
+                              <h3>
+                                {{ post.titre }}
+                                <br>
+                                <small>{{ post.excerpt }}</small>
+                              </h3>
+                              <p>
+                                {{ date_french }}<br>{{ post.showdate | date: "%R" }}
+                              </p>
+                            </li>
+                        
+                    {% endif %}
                   {% endfor %}
                 </ul>
             </div>
+
         </div>
     </div>
 

@@ -30,6 +30,15 @@
                     $('#section1 h1, #section1 .show_dates, #section1 h3').addClass('hidden').removeClass('fadeInUp');
                 }
             }
+
+             document.getElementById("past_show").onclick: function(index, direction){
+                if (index == 1 && direction == 'left') {
+                    $('#show_to_come_bloc').addClass('hidden').removeClass('bounce fadeInDown fadeInRight');
+                }
+                if (index == 2 && direction == 'right') {
+                    $('#past_show_bloc').addClass('hidden').removeClass('fadeInUp');
+                }
+            }
         });
     });
 

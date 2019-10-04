@@ -3,6 +3,8 @@ en: &en
   articles: 'Articles'
   back_to_top: 'Back to Top'
   categories: 'Categories'
+  past: 'Past'
+  to_come: 'To come'
   close: 'Close'
   enter_blog: 'Enter Blog'
   last_updated: 'Last updated'
@@ -42,6 +44,8 @@ fr: &fr
   articles: 'Articles'
   back_to_top: 'Haut de page'
   categories: 'Catégories'
+  past: 'Passé'
+  to_come: 'À venir'
   close: 'Fermer'
   enter_blog: 'Entrer'
   last_updated: 'Dernière mise à jour'
@@ -66,4 +70,3 @@ fr: &fr
   tags: 'Tags'
   theme_info: '<p><small>Theme <a href="https://github.com/yizeng/jekyll-theme-simple-texture" target="_blank">Simple Texture</a> developed by <a href="https://yizeng.me" target="_blank">Yi Zeng</a>, powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</small></p>'
   view: 'Vu'
-  

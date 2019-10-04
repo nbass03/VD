@@ -60,9 +60,7 @@
                                 <small>{{ post.excerpt }}</small>
                               </h3>
                               <p>
-                                {{ date_french }}
-                                <br>
-                                {{ post.showdate | date: "%R" }}
+                                {{ date_french }}<br>{{ post.showdate | date: "%R" }}
                               </p>
                             </li>
                         

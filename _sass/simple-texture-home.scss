@@ -96,14 +96,14 @@ textarea {
     display:inline-block;
     padding:0 5px;
 }
-.nav-global ul li:hover{
+.nav-global ul li a:hover{
     color: $color-hover;
 }
-.nav-gloval ul .section_on{
+.nav-gloval ul .section_on a{
     color: $color-text-light;
     text-decoration:undeline;
 }
-.nav-gloval ul .section_off{
+.nav-gloval ul .section_off a{
     color: $color-text-dark;
     text-decoration:none;
 }

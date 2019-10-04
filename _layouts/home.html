@@ -47,9 +47,9 @@
             <div class="container">
               {% assign posts_collate = site.posts %}
               {% for post in site.posts %}
-              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                {% assign date_english = post.date | date: date_format %}
-                {% include date-french.html %}
+              {% assign date_format = site.date_format | default: "%-d %B %Y" %}
+              {% assign date_english = post.showdate | date: date_format %}
+              {% include date-french.html %}
               <div class="single_show">
                   <p class="title">
                       {{ post.titre }}

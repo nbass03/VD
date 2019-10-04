@@ -89,7 +89,7 @@ textarea {
     background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #150E1F;
 }
 .u-container {
-    max-width: 72rem;
+    max-width: 52rem;
     margin-right: auto;
     margin-left: auto;
     padding-top: 10rem;
@@ -99,6 +99,7 @@ textarea {
 #section1 .show_dates ul{
     color: $color-text-light;
     list-style: none;
+    padding:0;
 
 }
 #section1 .show_dates .container li {

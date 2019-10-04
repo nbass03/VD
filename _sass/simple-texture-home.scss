@@ -99,11 +99,11 @@ textarea {
 .nav-global ul li a:hover{
     color: $color-hover;
 }
-.nav-gloval ul .section_on a{
+.nav-gloval ul .section_on{
     color: $color-text-light;
     text-decoration:undeline;
 }
-.nav-gloval ul .section_off a{
+.nav-gloval ul .section_off{
     color: $color-text-dark;
     text-decoration:none;
 }

@@ -44,23 +44,27 @@
         </h3>
         <div class="show_dates animated hidden">
             <div class="container">
+              {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
               {% assign posts_collate = site.posts %}
               {% for post in site.posts %}
-              {% assign date_format = site.date_format | default: "%-d %B %Y" %}
-              {% assign date_english = post.showdate | date: date_format %}
-              {% include date-french.html %}
-              <div class="single_show">
-                  <p class="title">
-                      {{ post.titre }}
-                  </p>
-                  <p class="details">
-                      {{ post.excerpt }}
-                  </p>
-                  <p class="details">
-                     <span class="post-meta">{{ date_french }}</span><br>
-                      {{ post.showdate | date: "%R" }}
-                  </p>
-              </div>    
+                {% capture date %}{{post.showdate | date: '%s' | plus: 0 %}}{% endcapture %}
+                {% if date > now %}
+                  {% assign date_format = site.date_format | default: "%-d %B %Y" %}
+                  {% assign date_english = post.showdate | date: date_format %}
+                  {% include date-french.html %}
+                  <div class="single_show">
+                      <p class="title">
+                          {{ post.titre }}
+                      </p>
+                      <p class="details">
+                          {{ post.excerpt }}
+                      </p>
+                      <p class="details">
+                         <span class="post-meta">{{ date_french }}</span><br>
+                          {{ post.showdate | date: "%R" }}
+                      </p>
+                  </div>  
+                {% endif %}  
               {% endfor %}
             </div>
         </div>

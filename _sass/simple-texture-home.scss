@@ -89,21 +89,20 @@ textarea {
     background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #150E1F;
 }
 
-#section1 .show_dates .container {
+#section1 .show_dates ul{
     width: 60%;
     margin:0 auto 2,5rem;
     color: $color-text-light;
     list-style: none;
 
 }
-    
-#section1 .show_dates .container .single_show {
+#section1 .show_dates .container li {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     border-top: 1px solid #EFF1F3;
 }
 
-#section1 .show_dates .container .single_show .title{
+#section1 .show_dates .container .single_show h3{
     line-height: 1.5;
     font-size: 1.8rem;
 }

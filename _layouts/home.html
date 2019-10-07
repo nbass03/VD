@@ -54,7 +54,7 @@
             <div class="show_dates animated hidden">
                 <ul class="container animated" id="show_to_come_bloc">
                   {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}
-                  {% assign posts_collate = site.posts %}
+                  {% assign posts_collate = site.posts | sort: 'post.showdate' %}
                   {% for post in site.posts %}
                     {% capture date %}{{post.showdate | date: '%s' | plus: 0 }}{% endcapture %}
                     {% if date > now %}

@@ -55,26 +55,30 @@
                 <ul class="container animated" id="show_to_come_bloc">
                   {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}
                   {% assign posts_collate = (site.posts | sort: 'showdate') %}
-                  {% for post in posts_collate %}
-                    {% capture date %}{{post.showdate | date: '%s' | plus: 0 }}{% endcapture %}
-                    {% if date > now %}
-                      {% assign date_format = site.date_format | default: "%-d %B %Y" %}
-                      {% assign date_english = post.showdate | date: date_format %}
-                      {% include date-french.html %}
-                            <li class="single_show">
-                              <h3>
-                                {{ post.titre }}
-                                <br>
-                                <small>{{ post.excerpt }}</small>
-                              </h3>
-                              <p>
-                                {{ date_french }}<br>{{ post.showdate | date: "%R" }}
-                              </p>
-                            </li>
-                        
-                    {% endif %}
+                  {% if posts_collate.size > 0 %}
+                      {% for post in posts_collate %}
+                        {% capture date %}{{post.showdate | date: '%s' | plus: 0 }}{% endcapture %}
+                        {% if date > now %}
+                          {% assign date_format = site.date_format | default: "%-d %B %Y" %}
+                          {% assign date_english = post.showdate | date: date_format %}
+                          {% include date-french.html %}
+                                <li class="single_show">
+                                  <h3>
+                                    {{ post.titre }}
+                                    <br>
+                                    <small>{{ post.excerpt }}</small>
+                                  </h3>
+                                  <p>
+                                    {{ date_french }}<br>{{ post.showdate | date: "%R" }}
+                                  </p>
+                                </li>
+                            
+                        {% endif %}
                   {% endfor %}
                 </ul>
+                {% else %}
+                <p>Il n'y a pas de dates pour l'instant!</p>
+                {% endif %}
 
                 <ul class="container animated hidden" id="past_show_bloc">
                   {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %}

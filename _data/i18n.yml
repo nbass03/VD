@@ -29,6 +29,7 @@ en: &en
   tags: 'Tags'
   theme_info: '<p><small>Theme <a href="https://github.com/yizeng/jekyll-theme-simple-texture" target="_blank">Simple Texture</a> developed by <a href="https://yizeng.me" target="_blank">Yi Zeng</a>, powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</small></p>'
   view: 'View'
+  no_show: 'There\'s no show coming up.'
 en-us:
   <<: *en
 en-gb:
@@ -70,3 +71,4 @@ fr: &fr
   tags: 'Tags'
   theme_info: '<p><small>Theme <a href="https://github.com/yizeng/jekyll-theme-simple-texture" target="_blank">Simple Texture</a> developed by <a href="https://yizeng.me" target="_blank">Yi Zeng</a>, powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</small></p>'
   view: 'Vu'
+  no_show: 'Il n'y a pas de dates pour l'instant!'

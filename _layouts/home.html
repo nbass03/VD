@@ -72,7 +72,9 @@
                                   </p>
                                 </li>
                         {% else %}
-                        <li>Il n'y a pas de dates pour l'instant!</li>   
+                        <li>
+                        <p>{{ site.data.i18n[site.lang].no_show }}</p>
+                        </li>   
                     {% endif %}
                   {% endfor %}
                 </ul>

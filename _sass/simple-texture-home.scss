@@ -96,9 +96,6 @@ textarea {
     display:inline-block;
     padding:0 5px;
 }
-.nav-link a:hover{
-    color: $color-hover;
-}
 .nav-global ul li a.section_on{
     color: $color-text-light;
     text-decoration:undeline;
@@ -106,6 +103,12 @@ textarea {
 .nav-global ul li a.section_off{
     color: $color-text-dark;
     text-decoration:none;
+}
+.nav-global ul li a.section_on:hover{
+    color: $color-hover;
+}
+.nav-global ul li a.section_off:hover{
+    color: $color-hover;
 }
 .u-container {
     max-width: 52rem;

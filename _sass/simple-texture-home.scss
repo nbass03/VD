@@ -150,9 +150,13 @@ textarea {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        }
+    }
+    #section1 .show_dates .container .single_show h3{
+        font-size: 1rem;
+    }
     #section1 .show_dates .container .single_show p{   
         text-align:center;
+        font-size: 1rem;
     }
 }
 

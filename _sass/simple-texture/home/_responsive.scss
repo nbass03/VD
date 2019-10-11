@@ -46,7 +46,7 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #section1 .show_dates ul li h3{
+    #section1 .show_dates .container .single_show h3, #section1 .show_dates .container li h3{
         font-size: 1rem;
     }
     #section1 .show_dates .container .single_show p{   
@@ -72,7 +72,10 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-    #section1 .show_dates ul li h3{
+    #section1 .show_dates .container .single_show h3{
+        font-size: 1rem;
+    }
+    #section1 .show_dates .container .single_show h3, #section1 .show_dates .container li h3{
         font-size: 1rem;
     }
     #section1 .show_dates .container .single_show p{   
@@ -88,7 +91,10 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-        #section1 .show_dates ul li h3{
+        #section1 .show_dates .container .single_show h3{
+        font-size: 1rem;
+    }
+    #section1 .show_dates .container .single_show h3, #section1 .show_dates .container li h3{
         font-size: 1rem;
     }
     #section1 .show_dates .container .single_show p{   

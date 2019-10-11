@@ -103,13 +103,11 @@ textarea {
 .nav-global ul li a.section_off{
     color: $color-text-dark-on-dark;
     text-decoration:none;
+    &:hover {
+        color: $color-hover;
+    }
 }
-.nav-global ul li a.section_on:hover{
-    color: $color-hover;
-}
-.nav-global ul li a.section_off:hover{
-    color: $color-hover;
-}
+
 .u-container {
     max-width: 52rem;
     margin-right: auto;

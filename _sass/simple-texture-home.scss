@@ -95,19 +95,18 @@ textarea {
         li{
             display:inline-block;
             padding:0 5px;
+            a.section_on{
+                color: $color-text-light;
+                text-decoration:undeline;
+            }
+            a.section_off{
+                color: $color-text-dark-on-dark;
+                text-decoration:none;
+                &:hover {
+                    color: $color-hover;
+                }
+            }
         }
-    }
-}
-
-.nav-global ul li a.section_on{
-    color: $color-text-light;
-    text-decoration:undeline;
-}
-.nav-global ul li a.section_off{
-    color: $color-text-dark-on-dark;
-    text-decoration:none;
-    &:hover {
-        color: $color-hover;
     }
 }
 

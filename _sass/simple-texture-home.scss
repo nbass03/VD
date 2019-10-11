@@ -83,6 +83,13 @@ textarea {
 
 #section0 {
     background: #000000;
+    .headings{
+        img{
+            display:block;
+            width:100%;
+            max-width:350px;
+        }
+    }
 }
 
 #section1 {
@@ -226,7 +233,7 @@ textarea {
     text-indent: -9999em;
 
     outline: none;
-    background-image: url('../images/theme/btn-more.png');
+    background-image: url('../images/theme/btn-more-bl.png');
     background-repeat: no-repeat;
     background-position: center center;
 

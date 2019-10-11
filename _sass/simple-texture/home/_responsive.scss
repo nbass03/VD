@@ -39,6 +39,13 @@
     h3 {
         font-size: 1.05em;
     }
+    #section1 .show_dates .container .single_show h3{
+        font-size: 1rem;
+    }
+    #section1 .show_dates .container .single_show p{   
+        text-align:center;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 720px), screen and (max-height: 480px) {
@@ -67,11 +74,5 @@
             background-size: $icon-size $icon-size;
         }
     }
-    #section1 .show_dates .container .single_show h3{
-        font-size: 1rem;
-    }
-    #section1 .show_dates .container .single_show p{   
-        text-align:center;
-        font-size: 1rem;
-    }
+
 }

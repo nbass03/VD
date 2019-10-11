@@ -87,6 +87,26 @@ textarea {
 
 #section1 {
     background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #000000;
+    .show_dates{
+        ul{
+            color: $color-text-light;
+            list-style: none;
+            padding:0;
+            li {
+                border-top: 1px solid #EFF1F3;
+                h3{
+                    line-height: 1.5;
+                    font-size: 1.2rem;
+                }
+                p{   
+                    line-height: 1.5;
+                    font-size: 1.2rem;
+                    color: #515862;
+                    text-align:right;
+                }
+            }
+        } 
+    }
 }
 .nav-global {
     ul{
@@ -117,25 +137,7 @@ textarea {
     padding-right: 1rem;
     padding-left: 1rem;
 }
-#section1 .show_dates ul{
-    color: $color-text-light;
-    list-style: none;
-    padding:0;
-}
-#section1 .show_dates .container li {
-    border-top: 1px solid #EFF1F3;
-}
 
-#section1 .show_dates .container .single_show h3{
-    line-height: 1.5;
-    font-size: 1.2rem;
-}
-#section1 .show_dates .container .single_show p{   
-    line-height: 1.5;
-    font-size: 1.2rem;
-    color: #515862;
-    text-align:right;
-}
 @media screen and (min-width: 45rem){
     .single_show {
         display: -webkit-box;

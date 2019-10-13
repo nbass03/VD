@@ -72,6 +72,9 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+    h2 {
+        font-size: 1em;
+    }
     #section1 .show_dates .container .single_show h3{
         font-size: 1rem;
     }
@@ -91,6 +94,9 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    h2 {
+        font-size: 1em;
+    }
     #section1 .show_dates .container .single_show h3{
         font-size: 1rem;
     }
